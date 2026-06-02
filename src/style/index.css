@@ -1,1 +1,58 @@
+@charset "utf-8";
 @import "reset.css";
+
+body {
+    background-color: rgb(213, 213, 213);
+    color: #fff;
+}
+
+/* Header */
+header {
+    height: 60px;
+    background: rgb(33, 91, 228);
+    line-height: 60px;
+}
+
+header .flex {
+    align-items: center;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.primary {
+    background-color: #09f;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+.secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+ul.flex{
+    gap: 16px;
+}
+
+ul li {
+    list-style: none;
+}

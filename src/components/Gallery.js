@@ -2,7 +2,7 @@ function Gallery(props) {
     return(
         <div className="gallery">
             {props.galleryLinks.map(link => (
-                <ul>
+                <ul className="flex">
                     <li key={link.index}>
                         <img src={link.url} alt={link.name} />
                     </li>
