@@ -6,11 +6,11 @@ function Banner(props){
         {index: 1, Text: "Good Try", className: "secondary"}
     ]
     return(
-        <div className="banner">
+        <div className="banner flex">
             <h1>{props.bannerTitle}</h1>
             <p>{props.bannerText}</p>
-            <Button buttonText={buttonText[0].Text} />
-            <Button buttonText={buttonText[1].Text} />
+            <Button className={buttonText[0].className} buttonText={buttonText[0].Text} />
+            <Button className={buttonText[1].className} buttonText={buttonText[1].Text} />
         </div>
     )
 };
