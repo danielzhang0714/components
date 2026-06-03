@@ -28,10 +28,18 @@ header h1 {
 }
 
 .flex {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
+.flex img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
 
 
 .primary {
@@ -53,7 +61,10 @@ header h1 {
 
 ul.flex{
     gap: 16px;
+    display: flex;
+    
 }
+
 
 ul li {
     list-style: none;

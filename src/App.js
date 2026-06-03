@@ -5,6 +5,7 @@ import pheobi from './assets/pheobi.gif';
 import phlorova from './assets/phlorova.gif';
 import Header from './components/Header';
 import Banner from './components/Banner';
+import Footer from './components/Footer';
 
 function App() {
   let bannerTitle = 'Welcome to Good Gallery';
@@ -21,13 +22,19 @@ function App() {
     {index: 2, name: 'Artists', url: '#'},
     {index: 3, name: 'Contact', url: '#'}
   ]
+  const buttonText = [
+        {index: 0, Text: "Learn More", className: "primary"},
+        {index: 1, Text: "Good Try", className: "secondary"},
+        {index: 2, Text: "Subscribe!", className: "footerbutton"}
+    ]
   return (
     <>
     <Header navLinks={navLinks} />
-    <Banner bannerTitle={bannerTitle} bannerText={bannerText} />
+    <Banner bannerTitle={bannerTitle} bannerText={bannerText} buttonText={buttonText}/>
       <div className="container">
         <Gallery className="gallery" galleryLinks={galleryLinks} />
       </div>
+      <Footer buttonText={buttonText} />
     </>
   );
 }
