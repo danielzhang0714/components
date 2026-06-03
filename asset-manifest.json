@@ -1,12 +1,17 @@
 {
   "files": {
-    "main.css": "/components/static/css/main.31d6cfe0.css",
-    "main.js": "/components/static/js/main.3ad0ab40.js",
+    "main.css": "/components/static/css/main.c3a23a8a.css",
+    "main.js": "/components/static/js/main.fe7ca77d.js",
+    "static/media/pheobi.gif": "/components/static/media/pheobi.093b05fc696b468e0ccf.gif",
+    "static/media/lynae-dance.gif": "/components/static/media/lynae-dance.aeef2e81147c62f03717.gif",
+    "static/media/phlorova.gif": "/components/static/media/phlorova.8f35f0b4c3dd248d1077.gif",
+    "static/media/denia-dance.gif": "/components/static/media/denia-dance.f08088986242461b796a.gif",
     "index.html": "/components/index.html",
-    "main.3ad0ab40.js.map": "/components/static/js/main.3ad0ab40.js.map"
+    "main.c3a23a8a.css.map": "/components/static/css/main.c3a23a8a.css.map",
+    "main.fe7ca77d.js.map": "/components/static/js/main.fe7ca77d.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.3ad0ab40.js"
+    "static/css/main.c3a23a8a.css",
+    "static/js/main.fe7ca77d.js"
   ]
 }
