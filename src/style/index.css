@@ -2,7 +2,7 @@
 @import "reset.css";
 
 body {
-    background-color: rgb(213, 213, 213);
+    background-color: rgb(174, 174, 174);
     color: #fff;
 
 }
@@ -10,6 +10,10 @@ body {
 .container {
     width: min(100% - 30px, 1080px);
     margin-inline: auto;
+}
+
+main {
+    height: calc(100svh - 60px - 100px);
 }
 
 /* Header */
@@ -48,12 +52,6 @@ nav ul li a {
     color: #fff;
 }
 
-.flex img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-}
-
 ul.flex{
     gap: 16px;
     display: flex;
@@ -65,17 +63,51 @@ ul li {
     list-style: none;
 }
 
+/* banner */
+.banner {
+    padding: 48px 0;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.banner p {
+    font-size: 18px;
+    color: rgb(240, 240, 240);
+    margin-bottom: 24px;
+}
+
+.banner-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 /* button */
+button {
+    cursor: pointer;
+}
+
 .primary {
     background-color: #09f;
+    width: 90px;
     color: #fff;
     border-radius: 5px;
     line-height: 36px;
     font-weight: 500;
 }
 
+.primary:hover {
+    background-color: rgb(7, 126, 206);
+}
+
 .secondary {
     background-color: transparent;
+    width: 90px;
     color: #fff;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 5px;
@@ -83,12 +115,24 @@ ul li {
     font-weight: 500;
 }
 
+.secondary:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(7, 126, 206);
+}
+
 .footerbutton {
     background-color: rgb(7, 126, 206);
+    width: 100px;
     color: #fff;
     border-radius: 5px;
     line-height: 36px;
     font-weight: 500;
+    transition: smooth 0.3s ease-in-out;
+}
+
+.footerbutton:hover {
+    background-color: rgb(255, 81, 12);
+    transform: scale(1.2);
 }
 
 /* gallery */
@@ -106,17 +150,16 @@ ul li {
 }
 
 .gallery img {
-    margin-top: 20px;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     display: block;
 }
 
 /* footer */
 .footer {
-    margin-top: 20px;
-    padding: 24px 0;
+    height: 100px;
+    padding: 12px 0;
     background-color: rgb(33, 91, 228);
     text-align: center;
 }

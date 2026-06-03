@@ -30,11 +30,13 @@ function App() {
   return (
     <>
     <Header navLinks={navLinks} />
-    <Banner bannerTitle={bannerTitle} bannerText={bannerText} buttonText={buttonText}/>
-      <div className="container">
-        <Gallery className="gallery" galleryLinks={galleryLinks} />
-      </div>
-      <Footer buttonText={buttonText} />
+    <main>
+      <Banner bannerTitle={bannerTitle} bannerText={bannerText} buttonText={buttonText}/>
+        <div className="container">
+          <Gallery className="gallery" galleryLinks={galleryLinks} />
+        </div>
+    </main>
+    <Footer buttonText={buttonText} />
     </>
   );
 }
