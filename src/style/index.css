@@ -43,12 +43,9 @@ nav ul {
     list-style: none;
 }
 
-.flex {
-  display: flex;
-  gap: 16px;
-  list-style: none;
-  padding: 0;
-  flex-wrap: wrap;
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .flex img {
