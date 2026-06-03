@@ -4,6 +4,12 @@
 body {
     background-color: rgb(213, 213, 213);
     color: #fff;
+
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
 }
 
 /* Header */
@@ -13,6 +19,13 @@ header {
     line-height: 60px;
 }
 
+header .container {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 header .flex {
     align-items: center;
 }
@@ -20,11 +33,14 @@ header .flex {
 header h1 {
     text-transform: uppercase;
     font-weight: 500;
+    font-size: 36px;
+    letter-spacing: 2px;
 }
 
-.container {
-    width: min(100% - 30px, 1080px);
-    margin-inline: auto;
+nav ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
 }
 
 .flex {
@@ -41,7 +57,18 @@ header h1 {
   object-fit: cover;
 }
 
+ul.flex{
+    gap: 16px;
+    display: flex;
+    
+}
 
+
+ul li {
+    list-style: none;
+}
+
+/* button */
 .primary {
     background-color: #09f;
     color: #fff;
@@ -59,13 +86,44 @@ header h1 {
     font-weight: 500;
 }
 
-ul.flex{
-    gap: 16px;
-    display: flex;
-    
+.footerbutton {
+    background-color: rgb(7, 126, 206);
+    color: #fff;
+    border-radius: 5px;
+    line-height: 36px;
+    font-weight: 500;
 }
 
-
-ul li {
+/* gallery */
+.gallery ul{
+    display: flex;
+    gap: 16px;
     list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery li {
+    list-style: none;
+}
+
+.gallery img {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* footer */
+.footer {
+    margin-top: 20px;
+    padding: 24px 0;
+    background-color: rgb(33, 91, 228);
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 16px;
 }
